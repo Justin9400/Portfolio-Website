@@ -5,69 +5,59 @@
 <style>
 * {box-sizing: border-box;}
 
-  html {
+html {
     scroll-behavior: smooth;
-  }
+}
 
-  #home {
+#home {
     height: 1000px;
-    background-color: rgb(58, 58, 58);
-  }
+    background-color: #3a3a3a;
+}
 
-  #about {
+#about {
     height: 1000px;
-    background-color: rgb(58, 58, 58);
-  }
+    background-color: #ffffff;
+}
 
-  #skills {
+#skills {
     height: 1000px;
-    background-color: rgb(58, 58, 58);
-  }
+    background-color: #00dbc9;
+}
 
-  #resume {
+#resume {
     height: 1000px;
-    background-color: rgb(58, 58, 58);
-  }
+    background-color: #3a3a3a;
+}
 
-  #portfolio {
+#portfolio {
     height: 1000px;
-    background-color: rgb(58, 58, 58);
-  }
+    background-color: #3a3a3a;
+}
 
-  body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  }
+body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-  .top-container {
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
-  }
-
-  .content {
-    padding: 16px;
-  }
-
-  .sticky {
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
 
-  .sticky + .content {
+.sticky + .content {
     padding-top: 102px;
-  }
+}
 
-  .header {
+.header {
     overflow: hidden;
     background-color: rgb(43, 43, 43);
-    padding: 20px 10px;
+    padding: 20px 5px;
     position: sticky;
     top: 0;
-  }
+}
 
-  .header a {
+.header a {
     float: left;
     color: rgb(107, 107, 107);
     text-align: center;
@@ -76,26 +66,30 @@
     font-size: 22px; 
     line-height: 25px;
     border-radius: 4px;
-  }
+}
 
-  .header a.logo {
+.header a.logo {
     position: absolute;
     margin: 0 auto;
     width: 100px;
     top:2.5px;
-  }
+}
 
-  .header a:hover {
+.header a:hover {
     background-color: none;
     color: rgb(0, 102, 255);
-  }
+}
 
-  .header a.active {
+.header a.active {
     background-color: dodgerblue;
     color: white;
-  }
+}
 
-  .footer {
+.header-right {
+    float: right;
+}
+
+.footer {
     position: fixed;
     padding: 30px 10px;
     left: 0;
@@ -104,215 +98,258 @@
     background-color: rgb(58, 58, 58);
     color: white;
     text-align: center;
-  }
+}
 
-  .logo {
+.logo {
     margin: 0;
     position: absolute;
     top: 25%;
     left: 60%;
-  }
+}
 
-  .profile {
+.profile {
     margin: 0;
     position: absolute;
-    top: 115%;
+    top: 130%;
     left: 10%;
-  }
+}
 
-  img{
+.img {
     clip-path: circle();
-  }
+}
 
-  .home {
+.home {
     font-family: sans-serif;
     font-size: 100px;
     position: absolute;
     top: 25%;
     left: 15%;
-  }
+}
 
-  .aboutMe {
+.aboutMe {
     font-family: sans-serif;
     font-size: 80px;
-    color: rgb(255, 255, 255);
+    color: #001d53;
     position: absolute;
-    top: 120%;
+    top: 140%;
     left: 40%;
-  }
+}
 
-  .aboutText {
+.aboutText {
     font-family: sans-serif;
     font-size: 80px;
-    color: rgb(255, 255, 255);
+    color: #001d53;
     position: absolute;
-    top: 132%;
+    top: 152%;
     left: 40%;
     right:5%;
-  }
+}
 
-  .about {
+.about {
     margin: 0;
     position: relative;
     padding-right:50px;
     top: 0.25%;
     left: 63%;
-  }
+}
 
-  .underline {
+.aboutUnderline {
     border-bottom: 5px solid #00dbc9;
     padding-bottom: 5px;
     left: 55%;
     position: relative;  
-  }
+}
 
-  .demopara {
+.skills {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 80px;
+    color: #001d53;
+    position: absolute;
+    top: 240%;
+    left: 36%;
+}
+
+.skillsUnderline {
+    border-bottom: 5px solid #001d53;
+    padding-bottom: 5px;
+    left: 55%;
+    position: relative;  
+}
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+  
+  
+.progress {
+  width: 100%;
+  max-width: 260px;
+  height: 10px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+  
+.progress-bar {
+    display: block;
+    height: 100%;
+    background: #001d53;
+    background-size: 300% 100%;
+}
+
+.demopara {
     line-height: 2 ;
-  }
+}
 
-  .center {
+.center {
     margin: 0;
     position: relative;
     padding-right:50px;
     top: 0.25%;
     left: 25%;
-  }
+}
 
-  .headerButtons {
+.headerButtons {
     margin: 0;
     position: absolute;
     top: 2%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+}
 
-  .centerFooter {
+.centerFooter {
     margin: 0;
     position: absolute;
     top: 25%;
     left: 45%;
-  }
+}
 
-  @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .header a {
-      float: none;
-      display: block;
-      text-align: left;
+    float: none;
+    display: block;
+    text-align: left;
     }
     
     .header-right {
-      float: none;
+    float: none;
     }
-  }
+}
+
+::-webkit-scrollbar {
+width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #585858; 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #3f3f3f; 
+}
 
 </style>
 </head>
 <body>
 
-  <div class="header" id="myHeader">
-    <div class="center">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#resume">Resume</a>
-      <a href="#portfolio">Portfolio</a>
-    </div>
-  </div>
-
-
-<body style="background-color:rgb(58, 58, 58)">
-  <!-- HOME Section -->
-  <div class="main" id="home">
-    <div class="logo">
-      <img src="logo.png" alt="logo" width="500" height="500">
-    </div>
-    <p class="home"><strong>Hi there, <br>I'm <span style="color: #001d53">J</span>ustin <br><span style="color: #00dbc9">K</span>achornvanich</p></strong>
-  </div>
-  
-  <!-- About Section -->
-  <div class="main" id="about">
-    <div class="aboutMe">
-      <p class="about"><strong>About Me</strong></p>
-      <div class="underline">
-
-      </div>
-    </div>
-    <div class="demopara">
-      <p class="aboutText" style="font-size:25"> I am currently a junior at the University of Lynchburg pursuing degrees in Computer <br> Science and Data Science as well as a minor in Mathematics. 
-        I am currently looking <br> to gain work experience in my field of study and further learn the intricacies of the field <br> from multiple perspectives. I am currently doing personal 
-        research on how machine learning and artificial intelligence can aid people with diabetes in the form of mobile applications. </p>
-    </div>
-   
-    <!-- Profile Picture -->
-    <div class="profile">
-      <div class="img">
-        <img src="pfp.jpg" alt="profile" width="450" height="600">
-      </div>
-    </div>
-  </div>
-
-  <!-- Skills Section -->
-  <div class="main" id="skills">
-    <p class="about">About Me!</p>
-  </div>
-
-  <!-- Resume Section -->
-  <div class="main" id="resume">
-    <p class="about">About Me!</p>
-  </div>
-
-  <!-- Portfolio Section -->
-  <div class="main" id="portfolio">
-    <p class="about">About Me!</p>
-  </div>
-</body>
-
-
-
-<div class="footer">
-  <div class="centerFooter">
+<div class="header">
+<div class="header-right">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#portfolio">Portfolio</a>
     <a href="https://www.linkedin.com/in/justin-kachornvanich-30a/"><img src="Images/LinkedIn.png" alt="logo" width="30" height="30"></a>
     <a href="https://www.instagram.com/jk9400/"><img src="Images/Instagram.png" alt="logo" width="30" height="30"></a>
     <a href="https://github.com/Justin9400/"><img src="Images/Github.png" alt="logo" width="30" height="30"></a>
-  </div>
+</div>
+</div>
+
+<body style="background-color:rgb(58, 58, 58)">
+    <!-- HOME Section -->
+    <div class="main" id="home">
+        <div class="logo">
+            <img src="logo.png" alt="logo" width="500" height="500">
+        </div>
+        <p class="home"><strong>Hi there, <br>I'm <span style="color: #001d53">J</span>ustin <br><span style="color: #00dbc9">K</span>achornvanich</p></strong>
+    </div>
+    
+    <!-- About Section -->
+    <div class="main" id="about">
+        <div class="aboutMe">
+            <p class="about"><strong>About Me</strong></p>
+            <div class="aboutUnderline">
+    
+            </div>
+        </div>
+        <div class="demopara">
+            <p class="aboutText" style="font-size:25"> I am currently a junior at the University of Lynchburg pursuing degrees in Computer <br> Science and Data Science as well as a minor in Mathematics. 
+            I am currently looking <br> to gain work experience in my field of study and further learn the intricacies of the field <br> from multiple perspectives. I am currently doing personal 
+            research on how machine learning and artificial intelligence can aid people with diabetes in the form of mobile applications. </p>
+        </div>
+        
+        <!-- Profile Picture -->
+        <div class="profile">
+            <div class="img">
+            <img src="pfp.jpg" alt="profile" width="450" height="600">
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="main" id="skills">
+        <div class="skills">
+            <p class="about"><strong>Skills</strong></p>
+            <div class="skillsUnderline">
+    
+            </div>
+            <div class="progress">
+                <span class="progress-bar" style="width: 25%"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Section -->
+    <div class="main" id="resume">
+    <p class="about">About Me!</p>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="main" id="portfolio">
+    <p class="about">About Me!</p>
+    </div>
+</body>
+
+
+<div class="footer">
+<div class="centerFooter">
+    <p>Designed and built by Justin Kachornvanich</p>
+</div>
 </div>
 
 <script>
-  window.onscroll = function() {myFunction()};
-  
-  var header = document.getElementById("myHeader");
-  var sticky = header.offsetTop;
-  
-  function myFunction() {
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
     if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
+    header.classList.add("sticky");
     } else {
-      header.classList.remove("sticky");
+    header.classList.remove("sticky");
     }
-  }
-  </script>
+}
+</script>
+
+
 
 </body>
 </html>
-
-
-<!--
-
-    <div style="padding-left:700px">
-      <a href="#about">About</a>
-    </div>
-    <div style="padding-left:800px">
-      <a href="#cs">Skills</a>
-    </div>
-    <div style="padding-left:965px">
-      <a href="#resume">Resume</a>
-    </div>
-    <div style="padding-left:1100px">
-      <a href="#photography">CS Portfolio</a>
-    </div>
-    <div style="padding-left:1200px">
-      <a href="#social">Photography Portfolio</a>
-    </div>
-
--->
