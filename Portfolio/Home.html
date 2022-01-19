@@ -51,8 +51,9 @@ body {
 
 .header {
     overflow: hidden;
-    background-color: rgb(43, 43, 43);
+    background-color: #3a3a3a;
     padding: 20px 5px;
+    scroll-padding-top: 70px;
     position: sticky;
     top: 0;
 }
@@ -160,6 +161,13 @@ body {
     position: relative;  
 }
 
+.social {
+    margin: 0;
+    position: absolute;
+    top: 92%;
+    left: 32%;
+}
+
 .skills {
     margin: 0;
     font-family: sans-serif;
@@ -178,21 +186,21 @@ body {
 }
 
 .body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
 }
   
   
 .progress {
-  width: 100%;
-  max-width: 260px;
-  height: 10px;
-  background: #e1e4e8;
-  border-radius: 3px;
-  overflow: hidden;
+    width: 100%;
+    max-width: 260px;
+    height: 10px;
+    background: #e1e4e8;
+    border-radius: 3px;
+    overflow: hidden;
 }
   
 .progress-bar {
@@ -264,15 +272,12 @@ background: #3f3f3f;
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
-    <a href="#resume">Resume</a>
+    <a href="F:\Portfolio-Website\Portfolio-Website\Resume.pdf">Resume</a>
     <a href="#portfolio">Portfolio</a>
-    <a href="https://www.linkedin.com/in/justin-kachornvanich-30a/"><img src="Images/LinkedIn.png" alt="logo" width="30" height="30"></a>
-    <a href="https://www.instagram.com/jk9400/"><img src="Images/Instagram.png" alt="logo" width="30" height="30"></a>
-    <a href="https://github.com/Justin9400/"><img src="Images/Github.png" alt="logo" width="30" height="30"></a>
 </div>
 </div>
 
-<body style="background-color:rgb(58, 58, 58)">
+<body style="background-color:#3a3a3a">
     <!-- HOME Section -->
     <div class="main" id="home">
         <div class="logo">
@@ -298,7 +303,12 @@ background: #3f3f3f;
         <!-- Profile Picture -->
         <div class="profile">
             <div class="img">
-            <img src="pfp.jpg" alt="profile" width="450" height="600">
+                <img src="pfp.jpg" alt="profile" width="450" height="600">
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/justin-kachornvanich-30a/" target="_blank"><img src="Images/LinkedIn.png" alt="logo" width="50" height="50"></a>
+                <a href="https://www.instagram.com/jk9400/" target="_blank"><img src="Images/Instagram.png" alt="logo" width="50" height="50"></a>
+                <a href="https://github.com/Justin9400/" target="_blank"><img src="Images/Github.png" alt="logo" width="50" height="50"></a>
             </div>
         </div>
     </div>
